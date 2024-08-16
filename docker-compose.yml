@@ -1,0 +1,10 @@
+services:
+  eleventy:
+    image: eleventy
+    ports: 
+      - "8080:8080"
+    volumes:
+      - ./src:/usr/src/app/src
+      - ./dist:/usr/src/app/dist
+      - .eleventy.js:/usr/src/app/.eleventy.js
+    command: npx eleventy --serve --port=8080

@@ -1,0 +1,14 @@
+{
+  "name": "11ty-docker",
+  "version": "0.0.1",
+  "description": "A Docker Container for 11ty",
+  "main": "index.js",
+  "scripts":{
+    "start": "npx eleventy --serve --port 8080"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
